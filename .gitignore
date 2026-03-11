@@ -40,10 +40,6 @@ meet-the-directors.css
 SGES employment.html
 SGES employment.css
 sges-team.html
-doctoral-student.html
-faculty-staff.html
-online-student.html
-part-time-student.html
 
 # Dependencies and build output
 node_modules/
