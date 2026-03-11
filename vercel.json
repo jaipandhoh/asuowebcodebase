@@ -1,10 +1,7 @@
 {
-  "version": 2,
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "devCommand": null,
   "installCommand": "npm install",
-  "framework": null,
   "rewrites": [
     {
       "source": "/(.*)",
@@ -13,16 +10,7 @@
   ],
   "headers": [
     {
-      "source": "/(.*\\.(png|jpg|jpeg|gif|svg|ico))",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/(.*\\.(css|js|mjs))",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
