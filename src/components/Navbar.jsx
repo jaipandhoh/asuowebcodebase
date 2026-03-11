@@ -96,7 +96,8 @@ export default function Navbar() {
                 {section.label}
                 <span className="text-xs">▾</span>
               </button>
-              <div className="invisible absolute left-0 top-10 min-w-[220px] translate-y-2 rounded-2xl border border-slate-200 bg-white p-3 text-sm shadow-soft opacity-0 transition group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
+              <div className="invisible absolute left-0 top-full min-w-[220px] pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
+              <div className="rounded-2xl border border-slate-200 bg-white p-3 text-sm shadow-soft">
                 <div className="flex flex-col gap-2">
                   {section.links.map((link) =>
                     link.href ? (
@@ -120,6 +121,7 @@ export default function Navbar() {
                     )
                   )}
                 </div>
+              </div>
               </div>
             </div>
           ))}
