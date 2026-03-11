@@ -1,53 +1,6 @@
-# Development and test files
-test-*.html
-logo-test.html
-deployment-troubleshooting.html
-events-sheet-setup.html
-homepage-wordpress.html
-meet-the-directors-clean.html
-logo-fix-guide.html
-
-# Old/unused pages (NOT linked in navigation - exclude these)
-# Note: abouttheI-Fee.html is KEPT because it's linked from the homepage
-asuogivernance policies .html
-asuogivernance policies .css
-child subsidy.html
-child subsidy.css
-fund and account types.html
-fund and account types.css
-history of ASUO.html
-history of ASUO.css
-servuces.html
-servuces.css
-support.html
-support.css
-travelandlodging.html
-travelandlodging.css
-stipends.html
-stipends.css
-streetfaire.html
-streetfaire.css
-getinvolved.html
-getinvolved.css
-resources.html
-resources.css
-elections.html
-elections.css
-Branches.html
-Branches.css
-meet-the-directors.html
-meet-the-directors.css
-SGES employment.html
-SGES employment.css
-sges-team.html
-
 # Dependencies and build output
 node_modules/
 dist/
-
-# Old deployment folders
-asuogov-deployment/
-asuogov-deployment-final/
 
 # IDE/Editor files
 *.code-workspace
@@ -66,18 +19,10 @@ asuogov-deployment-final/
 ehthumbs.db
 Thumbs.db
 
-# Documentation/templates
-google-sheets-setup-guide.md
-events-template.csv
-netlify.toml
+# Large image files - excluded in legacy/; allow in public/ for the app
+legacy/*.jpg
+legacy/*.png
+!legacy/2024-ASUO-Seal-BLK.png
 
-# Large image files - excluded at root; allow in public/ for the app
-*.jpg
-*.png
-!2024-ASUO-Seal-BLK.png
-!public/*.jpg
-!public/*.png
-
-# Large PDF files - exclude if too large
+# Large PDF files
 resolutions/*.pdf
-
