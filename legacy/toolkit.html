@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Toolkit – ASUO</title>
+  <meta name="description" content="A modern, interactive toolkit hub for student leaders with resources, templates, and guides.">
+  <link rel="icon" type="image/png" href="./asuo-white-logo.png">
+  <link rel="apple-touch-icon" href="./asuo-white-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="toolkit.css">
+</head>
+<body class="toolkit-page">
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="logo" aria-label="ASUO Homepage">
+        <img src="./2024-ASUO-Seal-BLK.png" alt="ASUO Logo" style="height: 35px; vertical-align: middle; margin-right: 0.1rem; margin-top: -4px;">
+        ASUO
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Background Layer -->
+  <div class="background-layer">
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
+    <div class="gradient-blob blob-3"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content" class="toolkit-main">
+    <div class="toolkit-container">
+      
+      <!-- Hero Section -->
+      <section class="toolkit-hero">
+        <div class="hero-badge">
+          <span class="badge-icon">✨</span>
+          <span class="badge-text">New · Updated each term</span>
+        </div>
+        <p class="hero-eyebrow">For Student Leaders, Organizers & Planners</p>
+        <h1 class="hero-title">Leadership Toolkit</h1>
+        <p class="hero-subtitle">Everything you need to plan events, manage budgets, and lead your org — all in one place.</p>
+        <div class="hero-actions">
+          <a href="#starter-essentials" class="btn-hero-primary" aria-label="Jump to the starter toolkit section">Start with Essentials</a>
+          <a href="#resource-directory" class="btn-hero-secondary" aria-label="Scroll to the full resource directory">Browse All Resources</a>
+        </div>
+        <div class="hero-visual">
+          <div class="abstract-cards">
+            <div class="card-float card-1">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Event Planning</span>
+            </div>
+            <div class="card-float card-2">
+              <i class="fas fa-dollar-sign"></i>
+              <span>Budgeting</span>
+            </div>
+            <div class="card-float card-3">
+              <i class="fas fa-bullhorn"></i>
+              <span>Marketing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Actions / Starter Essentials -->
+      <section id="starter-essentials" class="quick-actions-section">
+        <div class="section-header">
+          <h2 class="section-title">Start Here (Recommended for New Leaders)</h2>
+          <p class="section-subtitle">If you're new to running a club or project, begin with these three pieces.</p>
+        </div>
+        <div class="quick-actions-grid">
+          <div class="action-card">
+            <div class="card-badge">Most used</div>
+            <div class="card-icon">📅</div>
+            <h3 class="card-title">Event Planning Checklist</h3>
+            <p class="card-description">From idea to event day in 10 steps.</p>
+            <a href="#" class="card-action" aria-label="Open event planning checklist PDF">
+              Open Checklist
+              <span class="file-type">PDF</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="action-card">
+            <div class="card-badge badge-funding">Funding</div>
+            <div class="card-icon">💸</div>
+            <h3 class="card-title">Budget Request Template</h3>
+            <p class="card-description">Make funding requests clear, complete, and persuasive.</p>
+            <a href="#" class="card-action" aria-label="Download budget request template">
+              Download Template
+              <span class="file-type">DOCX</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="action-card">
+            <div class="card-badge badge-visibility">Visibility</div>
+            <div class="card-icon">📣</div>
+            <h3 class="card-title">Marketing Starter Pack</h3>
+            <p class="card-description">Captions, posters, and a simple promo timeline.</p>
+            <a href="#" class="card-action" aria-label="View marketing starter pack">
+              View Toolkit
+              <span class="file-type">FOLDER</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resource Grid / Directory -->
+      <section id="resource-directory" class="resource-grid-section">
+        <div class="section-header">
+          <h2 class="section-title">All Resources</h2>
+          <p class="section-subtitle">Search, filter, and download exactly what you need.</p>
+        </div>
+        <div class="resource-controls">
+          <div class="search-container">
+            <input type="text" id="resourceSearch" class="resource-search" placeholder="Search by keyword (e.g. &quot;tabling&quot;, &quot;social media&quot;, &quot;budget&quot;)" aria-label="Search toolkit resources">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          <div class="filter-controls">
+            <div class="filter-group">
+              <label class="filter-label">Category</label>
+              <div class="filter-pills">
+                <button class="filter-pill active" data-filter="all">All</button>
+                <button class="filter-pill" data-filter="event-planning">Event Planning</button>
+                <button class="filter-pill" data-filter="funding">Funding & Budget</button>
+                <button class="filter-pill" data-filter="communication">Communication & Marketing</button>
+                <button class="filter-pill" data-filter="leadership">Leadership & Team</button>
+                <button class="filter-pill" data-filter="policy">Policy & Procedures</button>
+              </div>
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">Format</label>
+              <select class="filter-dropdown" aria-label="Filter by format">
+                <option value="all">All</option>
+                <option value="pdf">PDF</option>
+                <option value="doc">Google Doc</option>
+                <option value="sheet">Google Sheet</option>
+                <option value="slides">Slide Deck</option>
+                <option value="folder">Folder</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">Sort by</label>
+              <select class="filter-dropdown" aria-label="Sort resources">
+                <option value="popular">Most used</option>
+                <option value="recent">Recently updated</option>
+                <option value="alphabetical">A → Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="resource-grid" id="resourceGrid">
+          <!-- Example Resource Card -->
+          <article class="resource-card">
+            <div class="resource-header">
+              <span class="resource-category">Event Planning</span>
+              <span class="resource-popularity">Student favorite</span>
+            </div>
+            <h3 class="resource-title">Tabling Playbook</h3>
+            <p class="resource-description">Step-by-step guide to running a high-impact tabling session.</p>
+            <div class="resource-meta">
+              <span class="resource-format">Google Doc</span>
+              <span class="resource-date">Updated Fall 2025</span>
+            </div>
+            <a href="#" class="resource-action" aria-label="Open tabling playbook">
+              Open
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </article>
+          <!-- More resource cards will be added dynamically -->
+        </div>
+      </section>
+
+      <!-- Featured Guides -->
+      <section class="featured-guides-section">
+        <div class="section-header">
+          <h2 class="section-title">Guided Paths</h2>
+          <p class="section-subtitle">Not sure where to start? Follow one of these paths.</p>
+        </div>
+        <div class="guides-grid">
+          <div class="guide-card">
+            <h3 class="guide-title">Plan Your First Event in 7 Days</h3>
+            <p class="guide-description">Bite-sized steps and links to templates to help you launch quickly.</p>
+            <div class="guide-steps">
+              <div class="step-indicator active">1</div>
+              <div class="step-indicator">2</div>
+              <div class="step-indicator">3</div>
+              <div class="step-indicator">4</div>
+              <div class="step-indicator">5</div>
+              <div class="step-indicator">6</div>
+              <div class="step-indicator">7</div>
+            </div>
+            <a href="#" class="guide-action">Start Path</a>
+          </div>
+          <div class="guide-card">
+            <h3 class="guide-title">Secure Funding for Your Org</h3>
+            <p class="guide-description">From idea → budget request → follow-up.</p>
+            <div class="guide-timeline">
+              <div class="timeline-dot active"></div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-dot"></div>
+            </div>
+            <a href="#" class="guide-action">Start Path</a>
+          </div>
+          <div class="guide-card">
+            <h3 class="guide-title">Boost Attendance & Awareness</h3>
+            <p class="guide-description">Practical marketing flow that doesn't require being a designer.</p>
+            <div class="guide-stack">
+              <div class="stack-card active"></div>
+              <div class="stack-card"></div>
+              <div class="stack-card"></div>
+              <div class="stack-card"></div>
+              <div class="stack-card"></div>
+              <div class="stack-card"></div>
+            </div>
+            <a href="#" class="guide-action">Start Path</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Use -->
+      <section class="how-to-use-section">
+        <div class="section-header">
+          <h2 class="section-title">How to Use This Toolkit</h2>
+        </div>
+        <div class="how-to-steps">
+          <div class="how-to-step">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Find your goal</h3>
+            <p class="step-description">Are you planning an event, requesting funding, or building your team? Use the filters to narrow your tools.</p>
+          </div>
+          <div class="step-connector"></div>
+          <div class="how-to-step">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Grab templates, not blank docs</h3>
+            <p class="step-description">Open or duplicate templates into your own Google Drive so you never start from scratch.</p>
+          </div>
+          <div class="step-connector"></div>
+          <div class="how-to-step">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Share with your team</h3>
+            <p class="step-description">Send links in your group chats and meeting agendas so everyone is on the same page.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feedback Section -->
+      <section class="feedback-section">
+        <div class="feedback-card">
+          <h2 class="feedback-title">Help Us Improve the Toolkit</h2>
+          <p class="feedback-description">Have a template to share or something you wish existed? Tell us.</p>
+          <a href="#" class="btn-feedback" aria-label="Open feedback or suggestion form">Suggest a Resource</a>
+          <p class="feedback-note">We review suggestions each term to keep this toolkit updated and relevant.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="toolkit-footer">
+    <div class="footer-content">
+      <p class="footer-text">Built by students, for students.</p>
+      <p class="footer-subtext">Questions about how to use something here? Reach out to your student government or resource center.</p>
+      <div class="footer-links">
+        <a href="contact.html">Contact</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="toolkit.js"></script>
+</body>
+</html>
+
