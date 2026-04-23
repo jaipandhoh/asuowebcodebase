@@ -65,6 +65,39 @@ const officers = [
 ];
 
 export default function OurDirectors() {
+  const [officers, setOfficers] = useState(fallbackOfficers);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchOfficers() {
+      if (!import.meta.env.VITE_SUPABASE_URL || import.meta.env.VITE_SUPABASE_URL === 'your-supabase-url') {
+        setLoading(false);
+        return;
+      }
+
+      const { data, error } = await supabase
+        .from('Officers')
+        .select('*')
+        .order('order_index', { ascending: true });
+
+      if (error) {
+        console.error("Error fetching officers:", error);
+      } else if (data && data.length > 0) {
+        const formattedData = data.map(officer => ({
+          name: officer.name,
+          title: officer.title,
+          email: officer.email,
+          image: getStorageUrl(officer.image_url || officer.image),
+          imagePosition: officer.image_position || officer.imagePosition || "center 50%"
+        }));
+        setOfficers(formattedData);
+      }
+      setLoading(false);
+    }
+
+    fetchOfficers();
+  }, []);
+
   return (
     <div className="bg-slate-50 min-h-screen">
       <main className="main-content max-w-6xl mx-auto px-4 sm:px-8 pt-24 pb-16">
